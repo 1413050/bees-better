@@ -1,0 +1,583 @@
+li a.nav-link {
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+header {
+    background-color: #fff8eb;
+
+}
+header nav{
+    z-index: 99;
+    position: relative;
+}
+.banner-section {
+    height: 650px;
+    position: relative;
+    background-image: url('../images/banner.png');
+    background-position: bottom;
+    background-size: cover;
+    padding: 100px;
+}
+
+.banner-section .col-md-7.position-relative {
+    height: 500px;
+    margin-top: -130px;
+}
+
+.banner-section .col-md-7>img:nth-child(2) {
+    z-index: 2;
+}
+
+.first-bee>img {
+    position: absolute;
+   
+    z-index: 1;
+}
+
+.second-bee>img {
+    position: absolute;
+    
+    z-index: 1;
+}
+
+.first-bee>img {
+    animation: float 6s infinite;
+}
+
+.first-bee>img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.second-bee>img:nth-child(2),
+.second-bee>img:nth-child(3) {
+    animation: float2 6s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.about-section p {
+    line-height: 20px;
+    font-size: 0.7rem;
+}
+
+.about-section .about-image {
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.h-700 {
+    height: 700px;
+}
+
+.scrollaber-bee::before {
+    content: "";
+    width: 5px;
+    height: 90%;
+    background: var(--main-color);
+    position: absolute;
+    top: 5%;
+    right: 50px;
+    z-index: 1;
+}
+
+.scrollaber-bee>img {
+    position: absolute;
+    top: 4%;
+    right: 10px;
+    width: 50px;
+    object-fit: contain;
+    height: 50px;
+    z-index: 2;
+    transition: top 0.2s ease;
+    /* Smooth movement */
+}
+
+.dots {
+    position: absolute;
+    top: -3%;
+    left: 0;
+    z-index: -1;
+    height: 300px;
+}
+
+.dots img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.marquee {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    /* Center the text vertically */
+    justify-content: center;
+    /* Start from center */
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 300s linear infinite;
+}
+
+.marquee-content div {
+    margin: 0 10px;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 50px;
+    font-weight: bolder;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    -webkit-text-stroke: 3px #000;
+}
+
+.marquee-content div span {
+    margin: 0 10px;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bolder;
+    -webkit-text-fill-color: none;
+    -webkit-text-stroke: none;
+    /* margin-top: -15px; */
+    display: block;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+        /* Start from the center */
+    }
+
+    to {
+        transform: translateX(100%);
+        /* Scroll to the left */
+    }
+}
+
+/* From Uiverse.io by Nawsome */
+.loader-div {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999; 
+    background: #fff;
+}
+.loader{
+    position: absolute;
+    left: 50%; 
+    top: 30%; 
+    transform: translate(-50%, -50%);
+}
+/* From Uiverse.io by PhyoTP */ 
+.socket {
+    width: 200px;
+    height: 200px;
+ 
+  }
+  
+  .hex-brick {
+    background: var(--main-color);
+    width: 30px;
+    height: 17px;
+    position: absolute;
+    top: 5px;
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  .h2 {
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+  }
+  
+  .h3 {
+    transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+  }
+  
+  .gel {
+    height: 30px;
+    width: 30px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .center-gel {
+    margin-left: -15px;
+    margin-top: -15px;
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  .c1 {
+    margin-left: -47px;
+    margin-top: -15px;
+  }
+  
+  .c2 {
+    margin-left: -31px;
+    margin-top: -43px;
+  }
+  
+  .c3 {
+    margin-left: 1px;
+    margin-top: -43px;
+  }
+  
+  .c4 {
+    margin-left: 17px;
+    margin-top: -15px;
+  }
+  
+  .c5 {
+    margin-left: -31px;
+    margin-top: 13px;
+  }
+  
+  .c6 {
+    margin-left: 1px;
+    margin-top: 13px;
+  }
+  
+  .c7 {
+    margin-left: -63px;
+    margin-top: -43px;
+  }
+  
+  .c8 {
+    margin-left: 33px;
+    margin-top: -43px;
+  }
+  
+  .c9 {
+    margin-left: -15px;
+    margin-top: 41px;
+  }
+  
+  .c10 {
+    margin-left: -63px;
+    margin-top: 13px;
+  }
+  
+  .c11 {
+    margin-left: 33px;
+    margin-top: 13px;
+  }
+  
+  .c12 {
+    margin-left: -15px;
+    margin-top: -71px;
+  }
+  
+  .c13 {
+    margin-left: -47px;
+    margin-top: -71px;
+  }
+  
+  .c14 {
+    margin-left: 17px;
+    margin-top: -71px;
+  }
+  
+  .c15 {
+    margin-left: -47px;
+    margin-top: 41px;
+  }
+  
+  .c16 {
+    margin-left: 17px;
+    margin-top: 41px;
+  }
+  
+  .c17 {
+    margin-left: -79px;
+    margin-top: -15px;
+  }
+  
+  .c18 {
+    margin-left: 49px;
+    margin-top: -15px;
+  }
+  
+  .c19 {
+    margin-left: -63px;
+    margin-top: -99px;
+  }
+  
+  .c20 {
+    margin-left: 33px;
+    margin-top: -99px;
+  }
+  
+  .c21 {
+    margin-left: 1px;
+    margin-top: -99px;
+  }
+  
+  .c22 {
+    margin-left: -31px;
+    margin-top: -99px;
+  }
+  
+  .c23 {
+    margin-left: -63px;
+    margin-top: 69px;
+  }
+  
+  .c24 {
+    margin-left: 33px;
+    margin-top: 69px;
+  }
+  
+  .c25 {
+    margin-left: 1px;
+    margin-top: 69px;
+  }
+  
+  .c26 {
+    margin-left: -31px;
+    margin-top: 69px;
+  }
+  
+  .c27 {
+    margin-left: -79px;
+    margin-top: -15px;
+  }
+  
+  .c28 {
+    margin-left: -95px;
+    margin-top: -43px;
+  }
+  
+  .c29 {
+    margin-left: -95px;
+    margin-top: 13px;
+  }
+  
+  .c30 {
+    margin-left: 49px;
+    margin-top: 41px;
+  }
+  
+  .c31 {
+    margin-left: -79px;
+    margin-top: -71px;
+  }
+  
+  .c32 {
+    margin-left: -111px;
+    margin-top: -15px;
+  }
+  
+  .c33 {
+    margin-left: 65px;
+    margin-top: -43px;
+  }
+  
+  .c34 {
+    margin-left: 65px;
+    margin-top: 13px;
+  }
+  
+  .c35 {
+    margin-left: -79px;
+    margin-top: 41px;
+  }
+  
+  .c36 {
+    margin-left: 49px;
+    margin-top: -71px;
+  }
+  
+  .c37 {
+    margin-left: 81px;
+    margin-top: -15px;
+  }
+  
+  .r1 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.2s;
+  }
+  
+  .r2 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.4s;
+  }
+  
+  .r3 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.6s;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.6s;
+  }
+  
+  .r1 > .hex-brick {
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.2s;
+  }
+  
+  .r2 > .hex-brick {
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.4s;
+  }
+  
+  .r3 > .hex-brick {
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.6s;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.6s;
+  }
+  
+  @keyframes pulse00 {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    50% {
+      -webkit-transform: scale(0.01);
+      transform: scale(0.01);
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fade00 {
+    0% {
+      background: #f6aa25;
+    }
+  
+    50% {
+      background: var(--main-color);
+    }
+  
+    100% {
+      background: #f6aa25;
+    }
+  }
+  
+  @media (max-width: 1920px) and (min-width: 1280px) {
+    .banner-section .col-md-7.position-relative {
+        
+        margin-top: -15%;
+    }
+    .banner-section {
+        height: 70vh;
+    }
+  }
+  @media (max-width: 650px)  {
+    .loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .navbar-brand  img{
+        width: 230px !important;
+    }
+    .banner-section{
+        padding: 100px 10px;
+        height: 800px;
+    }
+    .banner-section .col-md-7.position-relative { 
+        margin-top: 30px;
+            
+    }
+    .scrollaber-bee::before { 
+        right: 25px; 
+    }
+    .scrollaber-bee>img { 
+        right: -18px; 
+    }
+    .h-700 {
+        height: 485px;
+    }
+    .about-section .about-image {
+        height: 300px;
+        display: block;
+        margin: 25px auto;
+    }
+  }
