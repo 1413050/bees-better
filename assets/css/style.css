@@ -524,6 +524,9 @@ header nav{
       transform: scale(1);
     }
   }
+  main{
+    overflow-x: hidden;
+  }
   
   @keyframes fade00 {
     0% {
@@ -562,10 +565,10 @@ header nav{
         padding: 100px 10px;
         height: 800px;
     }
-    .banner-section .col-md-7.position-relative { 
-        margin-top: 30px;
-            
-    }
+    .banner-section .col-md-7.position-relative {
+      margin-top: 30px;
+      margin-left: -12px;
+  }
     .scrollaber-bee::before { 
         right: 25px; 
     }
