@@ -202,7 +202,7 @@ header nav{
 .loader{
     position: absolute;
     left: 50%; 
-    top: 30%; 
+    top: 50%; 
     transform: translate(-50%, -50%);
 }
 /* From Uiverse.io by PhyoTP */ 
